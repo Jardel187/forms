@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Culturama</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa On-line</h1>
+    </header>
+    <main>
+        <section>
+           <fieldset>
+            <legend>Dados pessoais</legend>
+            <form action="" method="get"> <!-- action um atrinuto que recebe uma url de destino dos dados (method, vai dizer qual é a forma de envio / get - os dados ficam visiveis na url / o post vai pra uma requisiçao do back-end)-->
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" id="userName" required>
+                <br>
+                <label for="userAge">Idade</label>
+                <input type="number" name="userAge" id="userAge" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data de Nascimento</label>
+                <input type="date" name="birthDate" id="birthDate">
+                <br>
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" id="userEmail" required>
+                <br>
+                <label for="userPhone">Telefone</label>
+                <input type="tel" name="userPhone" id="userPhone" pattern="[0-9]{11}" placeholder="()xxxxx-xxxx">
+                <br>
+                <label for="userImage"></label>
+                <input type="file" name="" id="userImage" accept="image/*"> <!-- vai receber aquirvos(nele precisa colocar)-->
+          '  </fieldset>'
+                <button type="submit">Enviar</button>
+            </form> 
+           
+            
+        </section>
+    </main>
+</body>
+</html>
