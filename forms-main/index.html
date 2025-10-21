@@ -11,7 +11,7 @@
     </header>
     <main>
         <section>
-           <fieldset>
+           <fieldset> <!--ele agrupa o formulario e o legend coloca um titulo-->
             <legend>Dados pessoais</legend>
             <form action="" method="get"> <!-- action um atrinuto que recebe uma url de destino dos dados (method, vai dizer qual é a forma de envio / get - os dados ficam visiveis na url / o post vai pra uma requisiçao do back-end)-->
                 <label for="userName">Nome</label>
@@ -31,7 +31,23 @@
                 <br>
                 <label for="userImage"></label>
                 <input type="file" name="" id="userImage" accept="image/*"> <!-- vai receber aquirvos(nele precisa colocar)-->
-          '  </fieldset>'
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero:</p>
+
+                <input type="radio" name="userGender" id="userGender" value="Feminino"> <!--no type radio voce precisar passar o valor(value)-->
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" id="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" id="userGender" value="notInformed">
+                <label for="userGender">Prefiro não informa</label>
+
+            </fieldset>
                 <button type="submit">Enviar</button>
             </form> 
            
