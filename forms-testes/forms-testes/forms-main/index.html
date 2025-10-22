@@ -119,7 +119,47 @@
                 <label for="linkedin">Linkedin</label>
                 
                 <br>
+
+                <label for="music">Estilo musical:</label>
+                <input list="styleTypes" type="text" name="UuserMusic" id="music">
+                <datalist id="styleTypes">
+                    <option value="Rock">
+                    <option value="Brega">
+                    <option value="Pop">
+                    <option value="Sertanejo">
+                    <option value="Eletronica">
+                    <option value="Mpb">    
+                </datalist>
+
+                <br>
+
+                <label for="favoriteColor"></label>
+                <input type="color" name="favoriteColor" id="favoriteColor">
                 
+            </fieldset>
+
+            <fieldset>
+                <legend>Satisfãção</legend>
+                <p>Avalie esse site:</p>
+
+                <input type="radio" name="assessment" id="great" value="otimo" required>
+                <label for="great">Otimo</label>
+
+                <input type="radio" name="assessment" id="good" value="Bom">
+                <label for="good">Bom</label>
+
+                <input type="radio" name="assessment" id="soso" value="regular">
+                <label for="soso">Regular</label>
+
+                <input type="radio" name="assessment" id="bad" value="ruim" >
+                <label for="bad">Ruim</label>
+
+                <br>
+
+                <label for="userMessage">Diga como podemos melhor se sua avalição foi ruim ou regular:</label>
+                <textarea name="userMessage" id="userMessage" rows="5" cols="40"></textarea>
+
+
             </fieldset>
         <button type="submit">Enviar</button>
         </form> 
