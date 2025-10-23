@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa Culturama</title>
+    <link rel="shortcut icon" href="../img/culturama-favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <img src="../img/logo-culturama.png" alt="Logo do site (culturama)">
         <h1>Pesquisa On-line</h1>
     </header>
     <main>
         <section>
-           <fieldset> <!--ele agrupa o formulario e o legend coloca um titulo-->
+           <fieldset> 
             <legend>Dados pessoais</legend>
-            <form action="" method="get"> <!-- action um atrinuto que recebe uma url de destino dos dados (method, vai dizer qual é a forma de envio / get - os dados ficam visiveis na url / o post vai pra uma requisiçao do back-end)-->
+            <form action="" method="get"> 
                 <label for="name">Nome</label>
                 <input type="text" name="userName" id="name" required>
                 <br>
@@ -30,7 +33,7 @@
                 <input type="tel" name="userPhone" id="userPhone" pattern="[0-9]{11}" placeholder="()xxxxx-xxxx">
                 <br>
                 <label for="userImage"></label>
-                <input type="file" name="" id="userImage" accept="image/*"> <!-- vai receber aquirvos(nele precisa colocar)-->
+                <input type="file" name="" id="userImage" accept="image/*"> 
             </fieldset>
 
             <fieldset>
@@ -38,7 +41,7 @@
 
                 <p>Gênero:</p>
 
-                <input type="radio" name="userGender" id="fem" value="Feminino"> <!--no type radio voce precisar passar o valor(value)-->
+                <input type="radio" name="userGender" id="fem" value="Feminino"> 
                 <label for="fem">Feminino</label>
 
                 <input type="radio" name="userGender" id="masc" value="Masculino">
